@@ -10,7 +10,6 @@ interface UseBooks {
 const useBooks = ({ prefix = "", params }: UseBooks = {}) => {
   const key = `${prefix}${REACT_QUERY_KEYS.BOOKS}`;
 
-  console.log("key", key);
   const booksQuery = useQuery(
     [key, { ...params }],
     () => searchBooks({ params }),

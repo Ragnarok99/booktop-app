@@ -12,9 +12,6 @@ const Search = () => {
     params: { q: query },
   });
 
-  console.log("query", query);
-
-  //   console.log("isLoading", isLoading);
   return (
     <View>
       {data?.items?.map((item) => (
